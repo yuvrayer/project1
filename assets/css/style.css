@@ -1,0 +1,110 @@
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("/assets/T_2_Q_8154192361_text_editor_upload/tile.jpg");
+}
+
+/* tasks container */
+#tasks { 
+    display: flex;
+    flex-flow: row-reverse wrap;
+    padding: 30px;
+    overflow-y: scroll;
+    justify-content: flex-end;
+}
+
+/* for every task */
+.task {
+    background-image: url("/assets/T_2_Q_8154192361_text_editor_upload/notebg.png");
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 2px;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+/* the class that make the fade-in effect */
+.visible {
+    opacity: 1;
+}
+
+/* the styling of the description of the task */
+.description {
+    overflow-y: scroll;
+    position: absolute;
+    width: 180px;
+    height: 160px;
+    top: 35px;
+    left: 5px;
+}
+
+/* the styling of the time (hour) of the task */
+.time {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+}
+
+/* the styling of the date of the task */
+.date {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+/* the styling of the closing button of the task */
+.task>button {
+    display: none;
+    background: transparent;
+    position: absolute;
+    border: 0px;
+    top: 18px;
+    right: 20px;
+    font-size: 23px;
+}
+
+/* makes the closing button appear */
+.task:hover>button {
+    display: block;
+}
+
+/* centering the form and header */
+header,
+form {
+    text-align: center;
+}
+
+/* makes the header in the font we define as "maya", and size */
+header {
+    font-family: "maya";
+    font-size: 42px;
+}
+
+/* defines the form properties */
+form {
+    background-image: url("/assets/T_2_Q_8154192361_text_editor_upload/formbg.jpg");
+    padding: 15px;
+    margin: 0px 100px 0px 100px;
+    background-size: contain;
+}
+
+/* defines the properties of the text area of the form */
+textarea {
+    height: 117px;
+    width: 316px;
+    font-size: 20px;
+}
+
+/* declares the font style "maya" */
+@font-face {
+    font-family: "maya";
+    src: url("/assets/sketch-chalk/Sketch\ Chalk.otf");
+}

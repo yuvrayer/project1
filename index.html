@@ -1,1 +1,31 @@
-<!-- empty -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <script defer src="assets/js/app.js"></script>
+</head>
+
+<body>
+    <div id="grid">
+        <header>my Task Board</header><br>
+        <div>
+            <form id="taskForm">
+                <textarea id="description" required></textarea> <br><br>
+                <input type="date" id="date" required /><br><br>
+                <input type="time" id="time" required /><br><br>
+                <button>Add Task</button>
+                <input type="reset" value="Clear Form" />
+            </form>
+        </div>
+        <div id="tasks">
+        </div>
+    </div>
+</body>
+
+
+</html>
